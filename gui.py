@@ -52,7 +52,7 @@ class GUI():
             self.quads[key]['l1'].set_3d_properties(points[2,0:2])
             self.quads[key]['l2'].set_data(points[0,2:4],points[1,2:4])
             self.quads[key]['l2'].set_3d_properties(points[2,2:4])
-            self.quads[key]['hub'].set_data(points[0,5],points[1,5])
+            self.quads[key]['hub'].set_data([points[0,5]], [points[1,5]])
             self.quads[key]['hub'].set_3d_properties(points[2,5])
         plt.pause(0.000000000000001)
 
